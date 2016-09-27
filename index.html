@@ -9,6 +9,16 @@
 	<meta name="Damboy" content="http://christianAlamis">
 
 	<title>Christian Alamis</title>
+  <meta name="author"             content="Christian Alamis (www.xtianalamis.com)">
+  <meta name="designer"           content="Christian Alamis (www.xtianalamis.com)">
+  <meta name="keywords"           content="Web Designer, Frontend Web Developer, Web Developer, Portfolio, Interactive, Interactive, scrolling, animation, Superscrollorama, Scrollorama, scroll, interaction, animation, sticky, pinning, parallax">
+  <meta property="fb:admins"      content="595418934">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="http://xtianalamis.com/">
+  <meta property="og:title"       content="Disruptive Web Design Agency">
+  <meta property="og:image"       content="http://xtianalamis.com/">
+  <meta property="og:name"       content="xtianalamis">
+  <meta property="og:description" content="Creating Modern and Responsive Web Application.">
 
   <!-- Web Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
@@ -24,6 +34,7 @@
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
   <!-- Responsive CSS -->
   <link href="assets/css/responsive.css" rel="stylesheet">
+  <!-- <link href="assets/css/type.css" rel="stylesheet"> -->
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,11 +43,85 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  <link rel="shortcut icon" href="assets/images/ico/favicon.png">
+  <!-- <link rel="shortcut icon" href="assets/images/ico/favicon.png"> -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/ico/apple-touch-icon-144-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ico/apple-touch-icon-114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="assets/images/ico/apple-touch-icon-57-precomposed.png">
+
+  <script type="text/javascript">
+    $(function(){
+
+        $("#typed").typed({
+            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 30,
+            backDelay: 500,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: 20,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
+   
+    <style>
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+            font-size: 150px;
+            color:#1863e6;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
+
+
+
+
+
+  </script>
+
 
 </head>
 
@@ -52,14 +137,19 @@
 	<section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
 		<div class="intro">
 			<div class="intro-sub">I am Christian Alamis</div>
+      <div id="typed-strings">
+         <h2><em><span style="color:#1863e6;">W</span>EB <span style="color:#1863e6;">D</span>ESI<span style="color:#1863e6;">G</span>NE<span style="color: #1863e6;">R</span></em></h3>
+                <h2><em><span style="color:#1863e6;">F</span>RO<span style="color:#1863e6;">N</span>TEN<span style="color:#1863e6;">D</span> W<span style="color:#1863e6;">E</span>B <span style="color:#1863e6;">D</span>EV<span style="color:#1863e6;">E</span>LO<span style="color:#1863e6;">P</span>E<span style="color:#1863e6;">R</span>.</em></h2>
+      </div>
+       <span id="typed" style="white-space:pre; font-size:50px;"></span>
 			<h1>Web <span>Designer</span></h1>
-			<p>I am a fully Professional Web Designer &amp; Developer<br> Involving with latest web designing and technologies.</p>
+			<p>I am a fully professional web designer &amp; Developer<br> Involving with latest web designing and technologies.<br> Follow me on Social Media</p>
 
       <div class="social-icons">
         <ul class="list-inline">
           <li><a href="https://www.facebook.com/damboydam.sadam"><i class="fa fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/mekorn_damboy"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.instagram.com/dambusiness/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.instagram.com/damboy06/"><i class="fa fa-instagram"></i></a></li>
         </ul>
       </div> <!-- /.social-icons -->
 		</div>
@@ -83,7 +173,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+					<a class="navbar-brand" href="index.html"><!-- <img src="assets/images/logo.png" alt=""> -->CHRISTIAN ALAMIS</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="custom-collapse">
@@ -112,15 +202,11 @@
               </div>
               <ul>
                 <li><strong>Name:</strong> Christian Alamis</li>
-                <li><strong>Date of birth:</strong> 06 July 1990</li>
                 <li><strong>Address:</strong> Makati City, Philippines</li>
                 <li><strong>Nationality:</strong> Pilipino</li>
-                <!-- <li><strong>Phone:</strong> (+63) 915 569 0046</li> -->
-                <!-- <li><strong>Email:</strong> xtianalamis@gmail.com</li> -->
               </ul>
             </div>
           </div> <!-- col-md-4 -->
-
           <div class="col-md-8 col-md-pull-4">
             <div class="short-info wow fadeInUp">
               <h3>Objective</h3>
@@ -132,26 +218,26 @@
               <p>I have been working as a web designer/developer since. I have a love of clean, minimalist, and elegant styling, and I have lots of experience in the production of WordPress, Css and html5 for modern websites. I loving creating awesome as per my clients’ need. I think user experience when I try to craft something for my clients. Making a design awesome.</p>
 
               <ul class="list-check">
-                <li>Web Designing</li>
-                <li>WordPress Development</li>
-                <li>Branding Design</li>
-                <li>Interface Design</li>
-                <li>Web App Development</li>
                 <li>User Experience Design</li>
-                <li>Photography</li>
-                <li>Video Editing</li>
+                <li>Interface Design</li>
+                <!-- <li>Photography</li> -->
                 <!-- <li>Digital Painting</li> -->
+                <!-- <li>Branding Design</li> -->
+                <!-- <li>Video Editing</li> -->
+                <li>Web Designing</li>
+                <li>Custom WordPress Development</li>
+                <li>Web App Development</li>
               </ul>
             </div>
 
-           <!--  <div class="my-signature">
+            <!-- <div class="my-signature">
               <img src="assets/images/sign.png" alt="">
             </div> -->
 
-            <div class="download-button">
-              <a class="btn btn-info btn-lg" href="mailto:xtianalamis@gmail.com"><i class="fa fa-paper-plane"></i>Send me message</a>
+            <!-- <div class="download-button">
+              <a class="btn btn-info btn-lg" href="#contact"><i class="fa fa-paper-plane"></i>Send me message</a>
               <a class="btn btn-primary btn-lg" href="#"><i class="fa fa-download"></i>download my cv</a>
-            </div>
+            </div> -->
           </div>  
 
 
@@ -182,6 +268,15 @@
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>SASS</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div>
+
             <div class="skill-progress">
               <div class="skill-title"><h3>JAVASCRIPT</h3></div>  
               <div class="progress">
@@ -196,45 +291,70 @@
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
+             <div class="skill-progress">
+              <div class="skill-title"><h3>BOOTSTRAP</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>90%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
           </div><!-- /.col-md-6 -->
 
           <div class="col-md-6">
             <div class="skill-progress">
-              <div class="skill-title"><h3>WORDPRESS</h3></div> 
+              <div class="skill-title"><h3>PHP</h3></div> 
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" ><span>95%</span>
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
             <div class="skill-progress">
-              <div class="skill-title"><h3>RESPONSIVE DESIGN</h3></div> 
+              <div class="skill-title"><h3>CODEIGNITER </h3></div> 
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>80%</span>
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
             <div class="skill-progress">
-              <div class="skill-title"><h3>WEB APP</h3></div>  
+              <div class="skill-title"><h3>RESPONSIVE DESIGN</h3></div>  
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>85%</span>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
-              <div class="skill-progress">
+            <div class="skill-progress">
               <div class="skill-title"><h3>WEB DESIGN</h3></div>  
               <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>85%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>WEB APPLICATION</h3></div>  
+              <div class="progress">
                 <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>WORDPRESS</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+
           </div><!-- /.col-md-6 -->
         </div><!-- /.row -->
 
-        <div class="skill-chart text-center">
+       <!--  <div class="skill-chart text-center">
           <h3>More skills</h3>
-        </div>
+        </div> -->
           
-        <div class="row more-skill text-center">
+        <!-- <div class="row more-skill text-center">
           <div class="col-xs-12 col-sm-4 col-md-2">
               <div class="chart" data-percent="91" data-color="e74c3c">
                     <span class="percent"></span>
@@ -283,10 +403,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
       </div><!-- /.container -->
-    </section><!-- End Skills Section -->
+    </section><!-- End Skills Section -->   
 
 
     <!-- Hire Section -->
@@ -296,17 +416,14 @@
           <div class="row">
             <div class="col-md-12">
               <h2>I'm available for freelance project</h2>
-              <a href="#" class="btn btn-default">Hire Me</a>
+              <a href="mailto:xtianalamis@gmail.com" class="btn btn-default">Work With Me</a>
             </div><!-- /.col-md-12 -->
           </div><!-- /.row -->
         </div><!-- /.container -->
       </div><!-- /.hire-section-bg -->
     </section><!-- End Hire Section -->
-
-
-
     <!-- Contact Section -->
-    <section id="contact" class="contact-section section-padding">
+    <!-- <section id="contact" class="contact-section section-padding">
       <div class="container">
         <h2 class="section-title wow fadeInUp">Get in touch</h2>
 
@@ -338,8 +455,8 @@
 
                 <button type="submit" name="submit" class="btn btn-primary">Send Message</button>
               </form>
-            </div><!-- /.contact-form -->
-          </div><!-- /.col-md-6 -->
+            </div><!/.contact-form 
+          </div><!/.col-md-6 
 
           <div class="col-md-6">
             <div class="row center-xs">
@@ -370,9 +487,9 @@
           </div>
 
           </div>
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- End Contact Section -->
+        </div><!-/.row 
+      </div><! /.container 
+    </section> --><!-- End Contact Section -->
 
 
 	<!-- Footer Section -->
@@ -396,6 +513,7 @@
 
 	<!-- Javascript files -->
 	<script src="assets/js/jquery.js"></script>
+  <script src="assets/js/typed.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/jquery.stellar.min.js"></script>
 	<script src="assets/js/jquery.sticky.js"></script>
@@ -410,5 +528,19 @@
   <script src="assets/js/jquery.fitvids.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
   <script src="assets/js/scripts.js"></script>
+ 
+
+  <script type="text/javascript">
+      $(function(){
+          $(".element").typed({
+            strings: ["Web Designer.", "Web developer."],
+            typeSpeed: 0
+          });
+      });
+  </script>
+
+
+
+
 </body>
 </html>
