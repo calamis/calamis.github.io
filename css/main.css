@@ -1,0 +1,41 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
++
+.navbar-collapse.collapse {
+  display: block !important; }
+
+.navbar-nav > li, .navbar-nav {
+  float: left !important; }
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important; }
+
+.navbar-right {
+  float: right !important; }
+
+#contactcall {
+  background-color: #0000ff !important;
+  border: solid transparent;
+  color: #fff; }
+
+@media only screen and (min-width: 320px) {
+  .navbar-default {
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    padding: 15px 0; }
+  .navbar-header {
+    padding: 0; }
+  .navbar-default.affix {
+    padding: 0;
+    background-color: #3A3A3A; }
+  .navbar-default.affix .navbar-brand {
+    color: #fff; }
+  .navbar-default.affix .navbar-brand:hover {
+    color: #fff; }
+  .navbar-default.affix .navbar-nav > li > a {
+    color: #ffffff; }
+  .navbar-default.affix .navbar-nav > li > a:hover {
+    color: #ffffff; } }

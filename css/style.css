@@ -1,0 +1,356 @@
+/*@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500);*/
+/*
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ * Customize by Christian Alamis - xtianalamis.com
+ */
+
+/* Global Styles */
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+p{font-size: 20px;}
+
+.container-fluid{
+    margin-left:100px !important; 
+    margin-right:150px !important; 
+}
+
+
+.navbar-header{
+    padding: 0;
+    background-color: transparent;
+}
+
+.spacetop40{
+    margin-top: 40px;
+    padding: 15px;
+}
+/* Collapsing Navbar Styles */
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+    .navbar-default {
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    padding: 15px 0;
+    /* Add additional styles here for the UNCOLLAPSED state */
+    }
+
+    .navbar-header{
+    padding: 0;
+    /*background-color: #0000FF;*/
+    }
+
+    .navbar-default.affix {
+    padding: 0;
+    background-color: #3A3A3A;
+
+    /* Add additional styles here for the COLLAPSED state */
+    }
+    .navbar-default.affix .navbar-brand{color:#fff;}
+    .navbar-default.affix .navbar-brand:hover{color:#fff;}
+    .navbar-default.affix .navbar-nav > li > a {color: #ffffff;}
+    .navbar-default.affix .navbar-nav > li > a:hover{color: #ffffff;}
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+}
+
+
+
+
+
+
+@media(min-width:768px) {
+  .navbar-default {
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    padding: 15px 0;
+    /* Add additional styles here for the UNCOLLAPSED state */
+  }
+
+  .navbar-header{
+    padding: 0;
+    /*background-color: #0000FF;*/
+  }
+
+  .navbar-default.affix {
+    padding: 0;
+    background-color: #3A3A3A;
+
+    /* Add additional styles here for the COLLAPSED state */
+  }
+  .navbar-default.affix .navbar-brand{color:#fff;}
+  .navbar-default.affix .navbar-brand:hover{color:#fff;}
+  .navbar-default.affix .navbar-nav > li > a {color: #ffffff;}
+  .navbar-default.affix .navbar-nav > li > a:hover{color: #ffffff;}
+}
+
+.navbar-default{border-bottom: none !important;}
+header h1 {
+  color: white;
+  font-size: 2em;
+}
+/* Header AFter Nabvar */
+.jumbotron .btn-primary{
+    background-color: #1863e6 !important;
+    color: #fff;
+}
+/* Header text */
+.jumbotron {
+    /*font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    min-height: 700px;
+    margin-bottom: 0 !important;
+    height: 100%;
+    color: white;
+    text-shadow: #444 0 1px 1px;
+    background:transparent;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+/* Content */
+/* First Section Who we are */
+#serveyou .row-overlap{
+    position: relative;
+    top: 150px;
+}
+
+
+#whoweare{
+    width: 100%;
+    background-color: #fff;
+    padding: 70px 0;
+}
+#serveyou{
+    width: 100%;
+    background-color: #F8F9FA;
+    padding-top:150px;
+}
+#serveyou .design{
+   /*background-color:#ccc;*/
+   padding: 20px;
+}
+#serveyou .design .description{
+    padding: 20px;
+    /*background-color: #0000FF;*/
+}
+#serveyou .design .description h4{
+    color:#333;
+}
+#serveyou .design .description p{
+    color: #7E838D;
+}
+#serveyou .service-header img{
+    min-height: 250px;
+    height: auto;
+}
+
+
+#serveyou .front{
+    background-color:#ccc;
+    padding: 20px;
+}
+#serveyou .front .description{
+   padding:20px;
+   background-color: #0000FF;
+}
+#serveyou .front .description h4{
+    color: #fff;
+}
+#serveyou .front .description p{
+    color: #fff;
+}
+#serveyou .servives-header img{
+    min-height: 250px;
+    height: auto;
+}
+
+
+
+#serveyou .cms{
+     background-color:#ccc;
+     padding: 20px;
+}
+#serveyou .cms .description{
+    padding:20px;
+    background-color: #0000FF;
+}
+#serveyou .cms .description h4{
+    color: #fff;
+}
+#serveyou .cms .description p{
+    color: #fff;
+}
+#serveyou .services-header img{
+    min-height: 250px;
+    height: auto;
+}
+/* PORTFOLIO */
+#portfolio{
+    width: 100%;
+    background-color: #ecf0f1;
+    /*padding: 285px 0;*/
+}
+#contact{
+    width: 100%;
+    background-color: #222222;
+    padding: 80px 0;
+    color: #fff;
+}
+#contact .pagelinks{padding-left: 0; list-style: none;}
+#contact .socialinks{padding-left: 0; list-style: none;}
+#contact .aboutus{color: #4582ec;}
+
+
+#contact p.aboutus{text-align: justify;color: #7E838D;}
+
+
+
+
+/*DROP LINE*/
+
+aside input.name{
+    background-color: #0000FF;
+    color: #fff;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    padding-top: 70px;
+}
+
+aside input.email{
+    background-color: #0000FF;
+    color: #fff;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    padding-top: 70px;
+}
+
+ /* code for animated blinking cursor */
+aside{padding: 100px 0; height: 300px;}
+.blue-bg{background-color: blue;}
+.white-bg{background-color: white;}
+aside h2{color: #ccc;}
+aside input.textarea{}
+
+.typed-cursor2{
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    font-size: 70px;
+    color:#fff;
+}
+@-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* Services */
+#serbisyo_ini{
+    font-size: 120px;
+ /*   position: absolute;
+    top: -160px;
+    left: 250px;*/
+    color: #0000FF;
+}
+
+
+/*Footer*/
+
+#footer{
+    background-color: #1B1C1D;
+    color: #ccc;
+}
+#footer p{font-size: 12px;}
+ 
+.site-footer {
+    /*max-width: 1160px;*/
+    margin: 0 auto;
+    padding: 4% 30px;
+}
+
+.site-info {
+    font-size: 12px;
+    /*display: inline-block;*/
+    /*float: left;*/
+    color: #555;
+    text-align: center;
+}
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    /*float: right;*/
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 15px;
+}
+.social-links img {
+    width: 16px;
+}
+
+/*Override Navbar CSS*/
+.navbar-collapse.collapse {
+  display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
+}
+
+.navbar-right {
+  float: right!important;
+}
